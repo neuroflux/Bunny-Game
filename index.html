@@ -1,0 +1,73 @@
+<html>  
+<head>
+<title>tileEngine - Isometric</title>
+<link rel="stylesheet" type="text/css" href="style.css" />
+<script type="text/javascript" src="jquery.js" language="javascript"></script>
+<script type="text/javascript" src="system.js"></script>
+<script type="text/javascript">
+function popUp(URL) {
+	day = new Date();
+	id = day.getTime();
+	eval("page" + id + " = window.open(URL, '" + id + "', 'toolbar=0,scrollbars=1,location=0,statusbar=0,menubar=0,resizable=0,width=880,height=450,left = 25,top = 25');");
+	return false;
+}
+</script>
+</head> 
+<body align="center" style="text-align: center;">	
+	<div id="hud">
+		<!--<select id="tile">
+				<option value="0">Land</option>
+				<option value="1">Water</option>
+				<option value="2">Swamp</option>
+		</select>-->
+		<a href="#" onclick="popUp('help.html');" style="color:#fff;text-decoration: none;cursor:pointer;">[ Help! ]</a>&nbsp;&nbsp;&nbsp;&nbsp;
+		Co-ords: <input disabled type="text" id="coords" value="" /> 
+		Moneys: <input disabled type="text" id="money" name="money" /> 
+		
+		Time: <input disabled type="text" id="time" value="" /> 
+		Harvests: <input disabled type="text" id="harvests" value="" /> 
+		Fish: <input disabled type="text" id="fish" value="" /> 
+		Health: <input disabled type="text" id="hp" value="" /> 
+		Points: <input disabled type="text" id="pts" value="" /><br />
+		
+		Spade: <input disabled type="text" id="spade" name="spade" /> 
+		Hammer: <input disabled type="text" id="hammer" value="" /> 
+		Saw: <input disabled type="text" id="saw" value="" /> 
+		Dirt: <input disabled type="text" id="dirt" value="" /> 
+		Wood: <input disabled type="text" id="wood" value="" /> 
+		Stone: <input disabled type="text" id="stone" value="" /> 
+		Statue: <input disabled type="text" id="statue" value="" /> 
+		fSeed: <input disabled type="text" id="seeds" value="" /> 
+		tSeed: <input disabled type="text" id="treeseeds" value="" /> 
+		<br />
+	</div>
+	<div id="status">
+		<!-- status updates -->
+	</div>
+	<div id="infoKey">
+		<strong>(d)</strong> - DIG<br />
+		<strong>(!)</strong> - SAW<br />
+		<strong>(r)</strong> - HAMMER<br />
+		<strong>(s)</strong> - FLOWER SEED<br />
+		<strong>(t)</strong> - TREE SEED<br />
+		<strong>(!)</strong> - SHOP MENU<br />
+		<strong>(b)</strong> - STATUE<br />
+		<strong>(f)</strong> - FISHING<br />
+		<strong>(e)</strong> - EAT FISH<br />
+		<em>(!) = Walk into<br /></em>
+		
+	</div>
+	<canvas id="main" width="904" height="465">
+		<h1 style="color: white; font-size: 24px;">I'll be damned, there be no HTML5 &amp; canvas support on this 'ere electronic machine!<sub>This game, jus' plain ol' won't work!</sub></h1>
+	</canvas>
+	<h1 onclick="init();" id="start" style="color:white;margin-top:10px;cursor:pointer;"><img src="play.png" alt="play" style="cursor:pointer;" /><br />...And his adventures in DigPlantBuild land!</h1>
+	<p id="help" style="color: #fff;"><br /><br />Click <a href="#" onclick="popUp('help.html');" style="color:#fff;cursor:pointer;">here</a> for help/instructions!</p>
+<script type="text/javascript">
+	$(document).ready(function() {
+		//jquery ready ... and probably not really needed... except for the initial fadeIn()...
+		
+	setInterval('zombieMove()',1000);
+	});
+</script>
+</body> 
+</html>  

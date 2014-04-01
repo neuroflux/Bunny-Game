@@ -1,0 +1,82 @@
+* { margin: 0px; padding: 0px; font-family: arial, helvetica, sans-serif; font-size: 12px; cursor: default; }
+body,html {
+	background-image: url(wood.jpg);
+	overflow: hidden;
+}
+#hud {
+	background-color: #000;
+	color: #c4c4c4;
+	padding: 5px 0px 5px 0px;
+	display: none;
+}
+#main {
+	border:#333;
+	border-width:0px;
+	border-style:solid;
+	display: none;
+}
+input {
+	width: 30px;
+	border: 1px solid #666;
+	background-color: #c4c4c4;
+	text-align: center;
+	font-weight: bold;
+}
+#hp {
+	color: #000;
+	width: 35px;
+	font-size: 16px;
+}
+#money {
+	color: gold;
+	background-color: #181818;
+}
+#pts {
+	font-size: 16px;
+	width: 35px;
+	color: red;
+}
+#time {
+	width: 55px;
+	color: #666;
+}
+#status {
+	float: right;
+	position: absolute;
+	right: 5px;
+	top: 55px;
+	width: 200px;
+	height: 175px;
+	border: 1px solid #666;
+	display: none;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+	font-size: 16px;
+	color: #fff;
+	text-align: center;
+	padding: 10px 5px 5px 5px;
+	-moz-opacity:.50;
+	filter:alpha(opacity=50);
+	opacity:.50
+}
+#infoKey {
+	float: left;
+	position: absolute;
+	left: 5px;
+	top: 55px;
+	width: 120px;
+	height: 155px;
+	border: 1px solid #666;
+	display: none;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+	font-size: 11px;
+	color: #fff;
+	text-align: left;
+	padding: 5px 5px 5px 5px;
+	-moz-opacity:.50;
+	filter:alpha(opacity=50);
+	opacity:.50
+}
